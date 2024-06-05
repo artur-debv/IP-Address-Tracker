@@ -18,10 +18,18 @@ function showAlert(isValid) {
         alertSuccess.style.display = 'block';
         alertSuccess.textContent = 'Ip informado está correto!';
         // Inicia a animação para desaparecer após 3 segundos
+        setTimeout(function() {
+            alertSuccess.style.display = 'none';
+            alertDanger.style.display = 'none';
+        }, 1000);
     } else {
         alertDanger.style.color = 'red';
         alertDanger.style.display = 'block';
         alertDanger.textContent = 'Ip informado está inválido!';
+        setTimeout(function() {
+            alertSuccess.style.display = 'none';
+            alertDanger.style.display = 'none';
+        }, 1000);
     }
 }
 
