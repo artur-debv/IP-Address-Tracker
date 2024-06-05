@@ -6,6 +6,10 @@
   --dark-gray: hsl(0, 0%, 59%);
 }
 
+.errors_sucess{
+  text-align: center;
+}
+
 .button_search_p {
   display: flex;
   align-items: center;
@@ -123,6 +127,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .input-field {

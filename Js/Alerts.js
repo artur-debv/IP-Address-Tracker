@@ -1,33 +1,27 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // Esconde os alertas quando a página é carregada
-    document.querySelector('.alert-success').style.display = 'none';
-    document.querySelector('.alert-danger').style.display = 'none';
+    document.querySelector('.message_error_or_success').style.display = 'none';
 });
 
 function showAlert(isValid) {
     // Seleciona os elementos de alerta
-    var alertSuccess = document.querySelector('.alert-success');
-    var alertDanger = document.querySelector('.alert-danger');
+    var alertSuccess = document.querySelector('.message_error_or_success');
+    var alertDanger = document.querySelector('.message_error_or_success');
 
     // Esconde ambos os alertas
     alertSuccess.style.display = 'none';
-    alertDanger.style.display = 'none';
+ 
 
     // Mostra o alerta correto e define a mensagem
     if (isValid) {
+        alertSuccess.style.color = 'green';
         alertSuccess.style.display = 'block';
         alertSuccess.textContent = 'Ip informado está correto!';
         // Inicia a animação para desaparecer após 3 segundos
-        setTimeout(() => {
-            alertSuccess.style.display = 'none';
-        }, 2000);
     } else {
+        alertDanger.style.color = 'red';
         alertDanger.style.display = 'block';
         alertDanger.textContent = 'Ip informado está inválido!';
-        // Inicia a animação para desaparecer após 3 segundos
-        setTimeout(() => {
-            alertDanger.style.display = 'none';
-        }, 2000);
     }
 }
 
