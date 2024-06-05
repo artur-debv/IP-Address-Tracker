@@ -14,22 +14,22 @@ function showAlert(isValid) {
 
     // Mostra o alerta correto e define a mensagem
     if (isValid) {
-        alertSuccess.style.color = 'green';
+        alertSuccess.style.color = '#08cf08';
         alertSuccess.style.display = 'block';
         alertSuccess.textContent = 'Ip informado está correto!';
         // Inicia a animação para desaparecer após 3 segundos
-        setTimeout(function() {
+       /* setTimeout(function() {
             alertSuccess.style.display = 'none';
             alertDanger.style.display = 'none';
-        }, 1000);
+        }, 1000);*/
     } else {
         alertDanger.style.color = 'red';
         alertDanger.style.display = 'block';
         alertDanger.textContent = 'Ip informado está inválido!';
-        setTimeout(function() {
+        /*setTimeout(function() {
             alertSuccess.style.display = 'none';
             alertDanger.style.display = 'none';
-        }, 1000);
+        }, 1000);*/
     }
 }
 
