@@ -26,7 +26,7 @@
                 </div>
                 <div class="errors_sucess">
                     <P class="message_error_or_success"></P>
-                 </div>
+                </div>
             </div>
             <div class="container">
                 <!-- Data Section -->
@@ -56,20 +56,26 @@
                         <p class="ispInput"></p>
                     </article>
                 </section>
-                <!-- Map -->
-                <section class="map-section">
-
-                    <div id="map"></div>
-                </section>
                 </main>
             </div>
         </header>
     </div>
 
+      <!-- Map -->
+      <section class="map-section">
+
+        <div id="map"></div>
+    </section>
 
 
-    <script src="Js/index.js"></script>
-   <script src="Js/Alerts.js"></script>
+    <!-- Map API -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="Js/index.js"></script>
+    <script src="Js/Alerts.js"></script>
+    <script src="Js/Map.js"></script>
 
 </body>
 
