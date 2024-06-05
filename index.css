@@ -90,6 +90,16 @@ header {
   /* Garante que o alerta fique acima de outros elementos */
 }
 
+.alert-success{
+  z-index: 999;
+  width: 300px;
+}
+
+.alert-danger{
+  z-index: 999;
+  width: 300px;
+}
+
 /* Opcional: Animação para desaparecer o alerta */
 @keyframes fadeOut {
   from {
