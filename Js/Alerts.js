@@ -10,7 +10,7 @@ function showAlert(isValid) {
 
     // Esconde ambos os alertas
     alertSuccess.style.display = 'none';
- 
+
 
     // Mostra o alerta correto e define a mensagem
     if (isValid) {
@@ -18,18 +18,18 @@ function showAlert(isValid) {
         alertSuccess.style.display = 'block';
         alertSuccess.textContent = 'Ip informado está correto!';
         // Inicia a animação para desaparecer após 3 segundos
-        /*setTimeout(function() {
+        setTimeout(function () {
             alertSuccess.style.display = 'none';
             alertDanger.style.display = 'none';
-        }, 1000);*/
+        }, 1000);
     } else {
         alertDanger.style.color = 'red';
         alertDanger.style.display = 'block';
         alertDanger.textContent = 'Ip informado está inválido!';
-        /*setTimeout(function() {
+        setTimeout(function () {
             alertSuccess.style.display = 'none';
             alertDanger.style.display = 'none';
-        }, 1000);*/
+        }, 1000);
     }
 }
 
@@ -40,7 +40,7 @@ const regex = /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$/;
 const input_Search = document.querySelector(".input-field");
 
 // Adiciona um ouvinte de evento para detectar cada entrada do usuário
-input_Search.addEventListener('input', function() {
+input_Search.addEventListener('input', function () {
     // Chama a função showAlert com o resultado da validação
     showAlert(regex.test(input_Search.value));
 });
