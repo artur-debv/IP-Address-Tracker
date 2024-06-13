@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function showAlert(isValid) {
     // Seleciona os elementos de alerta
-    const alertSuccess = document.querySelector('.message_error_or_success');
-    const alertDanger = document.querySelector('.message_error_or_success');
+   var alertSuccess = document.querySelector('.message_error_or_success');
+    var alertDanger = document.querySelector('.message_error_or_success');
 
     // Esconde ambos os alertas
     alertSuccess.style.display = 'none';
